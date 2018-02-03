@@ -1,4 +1,4 @@
-{
+`{
   "logPrefix": "whattomine.js",
   "sleepTimeMinutes": 1,
   "targetUrl": [ "http://whattomine.com/coins.json" ],
