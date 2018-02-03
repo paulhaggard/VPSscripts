@@ -1,0 +1,21 @@
+{
+  "logPrefix": "whattomine.js",
+  "sleepTimeMinutes": 1,
+  "targetUrl": [ "http://whattomine.com/coins.json" ],
+  "cookie": "%7B%22cost%22%3A0.2%2C%22sort%22%3A%22Profitability3%22%2C%22volume%22%3A%220_1%22%2C%22revenue%22%3A%2224h%22%2C%22adapt_280x%22%3Anull%2C%22adapt_q_280x%22%3A%220%22%2C%22adapt_380%22%3Anull%2C%22adapt_q_380%22%3A%220%22%2C%22adapt_fury%22%3Anull%2C%22adapt_q_fury%22%3A%220%22%2C%22adapt_470%22%3Anull%2C%22adapt_q_470%22%3A%220%22%2C%22adapt_480%22%3Anull%2C%22adapt_q_480%22%3A%220%22%2C%22adapt_570%22%3Anull%2C%22adapt_q_570%22%3A%220%22%2C%22adapt_580%22%3A%22true%22%2C%22adapt_q_580%22%3A%222%22%2C%22adapt_vega56%22%3Anull%2C%22adapt_q_vega56%22%3A%220%22%2C%22adapt_vega64%22%3Anull%2C%22adapt_q_vega64%22%3A%220%22%2C%22adapt_750Ti%22%3Anull%2C%22adapt_q_750Ti%22%3A%220%22%2C%22adapt_1050Ti%22%3Anull%2C%22adapt_q_1050Ti%22%3A%220%22%2C%22adapt_10606%22%3Anull%2C%22adapt_q_10606%22%3A%220%22%2C%22adapt_1070%22%3Anull%2C%22adapt_q_1070%22%3A%220%22%2C%22adapt_1080%22%3Anull%2C%22adapt_q_1080%22%3A%220%22%2C%22adapt_1080Ti%22%3Anull%2C%22adapt_q_1080Ti%22%3A%221%22%2C%22bk2bf%22%3A%22true%22%2C%22x11gf%22%3A%22true%22%2C%22lbry%22%3A%22true%22%2C%22grof%22%3A%22true%22%2C%22cn%22%3A%22true%22%2C%22ns%22%3A%22true%22%2C%22lre%22%3A%22true%22%2C%22bkv%22%3Anull%2C%22bk14%22%3A%22true%22%2C%22eth%22%3A%22true%22%2C%22eq%22%3A%22true%22%2C%22pas%22%3A%22true%22%2C%22sk%22%3Anull%2C%22l2z%22%3Anull%2C%22skh%22%3A%22true%22%2C%22kec%22%3Anull%2C%22exchanges%22%3A%5B%22%22%2C%22abucoins%22%2C%22bitfinex%22%2C%22bittrex%22%2C%22bleutrade%22%2C%22cryptopia%22%2C%22hitbtc%22%2C%22poloniex%22%2C%22yobit%22%5D%2C%22bk2b_hr%22%3A1980.0%2C%22bk2b_p%22%3A300.0%2C%22x11g_hr%22%3A13.8%2C%22x11g_p%22%3A220.0%2C%22lbry_hr%22%3A270.0%2C%22lbry_p%22%3A290.0%2C%22gro_hr%22%3A37.0%2C%22gro_p%22%3A230.0%2C%22cn_hr%22%3A1380.0%2C%22cn_p%22%3A230.0%2C%22ns_hr%22%3A1300.0%2C%22ns_p%22%3A300.0%2C%22lrev2_hr%22%3A11400.0%2C%22lrev2_p%22%3A240.0%2C%22bkv_hr%22%3A10500.0%2C%22bkv_p%22%3A600.0%2C%22bk14_hr%22%3A2700.0%2C%22bk14_p%22%3A260.0%2C%22eth_hr%22%3A60.4%2C%22eth_p%22%3A270.0%2C%22eq_hr%22%3A580.0%2C%22eq_p%22%3A240.0%2C%22pas_hr%22%3A1380.0%2C%22pas_p%22%3A290.0%2C%22sk_hr%22%3A780.0%2C%22sk_p%22%3A450.0%2C%22l2z_hr%22%3A420.0%2C%22l2z_p%22%3A300.0%2C%22skh_hr%22%3A37.0%2C%22skh_p%22%3A230.0%2C%22kec_hr%22%3A900.0%2C%22kec_p%22%3A390.0%7D",
+  "cmdservicestop": "/usr/bin/systemctl stop ",
+  "cmdservicelist": "/usr/bin/systemctl --no-page -t service -a | grep miner-amd | tr -d ' ' | cut -d'.' -f1",
+  "cmdservicestart": "/usr/bin/systemctl start ",
+  "serviceMode": true,
+  "debugLevel": "3",
+  "appModeWorkDir": "/opt/minerhotel",
+  "warnAboutMissingMiners": true,
+  "stopMinersOnExit": true,
+  "miners": {
+    "Ellaism": "miner-amd-ella-ethhash-ellapool",
+    "Musicoin": "miner-amd-music-ethhash-mph",
+    "Ethereum": "miner-amd-eth-ethhash-ethermine",
+    "Nicehash-Ethash": "miner-amd-eth-ethhash-nicehash",
+    "Pirl": "miner-amd-pirl-ethhash-minerpool"
+  }
+}
